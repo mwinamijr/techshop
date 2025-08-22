@@ -1,50 +1,43 @@
-# Welcome to your Expo app 👋
+# TechShop POS App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A simple **Point-of-Sale (POS) application** built with **React Native (Expo)** using **SQLite** for local storage.  
+This app allows shop owners to track products, sales, profit, and manage daily cash sessions with automatic reconciliation.
 
-## Get started
+---
 
-1. Install dependencies
+## Features
 
+- **Products Management**
+  - Quick-sale buttons for products.
+  - Tracks quantity, selling price, and profit automatically.
+
+- **Dashboard**
+  - Displays total sales and total profit for the current day.
+
+- **Session Management**
+  - Start and close daily sessions with opening and closing cash.
+  - Automatically calculates expected cash and differences.
+
+- **Reports**
+  - View historical sessions with sales, cash, and profit summaries.
+
+- **Offline-first**
+  - Works fully offline using SQLite.
+
+---
+
+## Tech Stack
+
+- **React Native / Expo**
+- **Expo Router (app/tabs format)** for navigation
+- **SQLite** (`expo-sqlite`) for local database
+- **Hermes** JS engine support
+
+---
+
+## Installation
+
+1. Clone the repository:
    ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+   git clone <repository-url>
+   cd shop-pos
