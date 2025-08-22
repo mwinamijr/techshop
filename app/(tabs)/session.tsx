@@ -1,6 +1,6 @@
-import { View, Text, Button, TextInput, Alert } from "react-native";
 import { useEffect, useState } from "react";
-import { db } from "../db";
+import { Alert, Button, Text, TextInput, View } from "react-native";
+import { db } from "../../db";
 
 export default function Session() {
   const [openingCash, setOpeningCash] = useState("");

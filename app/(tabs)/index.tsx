@@ -1,6 +1,6 @@
-import { View, Text } from "react-native";
 import { useEffect, useState } from "react";
-import { db } from "../db";
+import { Text, View } from "react-native";
+import { db } from "../../db";
 
 export default function Dashboard() {
   const [total, setTotal] = useState(0);

@@ -1,6 +1,6 @@
-import { View, Text, FlatList } from "react-native";
 import { useEffect, useState } from "react";
-import { db } from "../db";
+import { FlatList, Text, View } from "react-native";
+import { db } from "../../db";
 
 export default function Reports() {
   const [sessions, setSessions] = useState<any[]>([]);
